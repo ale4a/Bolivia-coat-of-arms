@@ -11,7 +11,7 @@ body{
   margin: 0;
   box-sizing: border-box;
   max-width: 100%;
-  --main-red: red;
+  --main-red: #aa0002;
   --main-yellow: yellow;
   --main-green: green;
   --color-cannon: #FFAB15;
@@ -19,7 +19,6 @@ body{
   --height-desktop: 52rem;
   --width-tablet: 30rem;
   --height-tablet: 26rem;
-  
   /* 
   Breakpoints
   mobile: 576px,
@@ -40,7 +39,6 @@ html {
   grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(13, 1fr);
 }
-
 .square {
   border: 0.1rem solid rgba(5, 5, 5, 0.2);
 }
@@ -51,6 +49,7 @@ html {
     width: var(--width-tablet);
   }
 }
+
 .container{
   display: flex;
   justify-content: center;
@@ -77,6 +76,7 @@ html {
   text-align: center;
   position: absolute;
 }
+
 .condor{
   background-image: url(/images/condor.png);
   background-size: contain;
@@ -90,6 +90,7 @@ html {
   text-align: center;
   position: absolute;
 }
+
 .rifle__1{
   background-image: url(/images/rifle.gif);
   background-size: contain;
@@ -103,6 +104,7 @@ html {
   text-align: center;
   position: absolute;
 }
+
 .rifle__2{
   background-image: url(/images/rifle.gif);
   background-size: contain;
@@ -116,12 +118,14 @@ html {
   text-align: center;
   position: absolute;
 }
+
 .pavilions{
   position: absolute;
-  top: 80px;
+  top: 8rem;
   width: 100%;
   height: 74%;
 }
+
 .pavilion {
   background: #aa0002;
   background: linear-gradient(5deg, #aa0002 0%, #db0000 13%, #960000 25%, #e00000 39%, #8c0000 54%, #ff0000 70%, #990000 82%, #db0000 93%, #d30000 100%);
@@ -131,63 +135,75 @@ html {
   border-radius: 0 0 280rem 70rem;
   box-shadow: -0.2rem 0.5rem 0.3rem #111111;
 }
+
 .pavilion:before, .pavilion:after {
   display: block;
   content: '';
   right: 0;
   position: absolute;
 }
+
 .pavilion:before {
   width: 77%;
   height: 80%;
   background: linear-gradient(3deg, #c6bf00 0%, #f4f000 13%, #b2af00 25%, #f6f200 39%, #aaa700 54%, #fffb15 70%, #b6b300 82%, #f4f000 93%, #ece800 100%);
   border-radius: 0 0 210rem 100rem;
 }
+
 .pavilion:after {
   width: 53%;
   height: 60%;
   background: linear-gradient(1deg, #356501 0%, #428301 13%, #2d5901 25%, #438501 39%, #2a5301 54%, #4d9802 70%, #2e5b01 82%, #428301 93%, #407f01 100%);
   border-radius: 0 0 21rem 20rem;
 }
+
 .pavilions__left{
   /* it is not neccesary this lines but it to maintain coherence in code */
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 .pavilions__right{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .pavilions__1 {
   top: 15.5rem;
   left: 8rem;
   transform: skewy(35deg);
 }
+
 .pavilions__2 {
   top: 11.5rem;
   left: 8rem;
   transform: skewy(40deg) rotate(5deg) scale(0.8);
 }
+
 .pavilions__3 {
   top: 16rem;
   left: 2.5rem;
   transform: skewy(40deg) rotate(2deg) scale(0.8);
 }
+
 .lances{
   position: absolute;
   top: 8rem;
   width: 100%;
   height: 74%;
 }
+
 .lance__left{
   /* it is not neccesary this lines but it to maintain coherence in code */
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 .lance__right{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .lance {
   border: 0.2rem solid #441200;
   background: #996500;
@@ -198,6 +214,7 @@ html {
   position: absolute;
   z-index: 1;
 }
+
 .lance span {
   display: block;
   width: 0;
@@ -209,6 +226,7 @@ html {
   left: -0.9rem;
   top: -6rem;
 }
+
 .lance span:after {
   background: #a6a6a6;
   content: '';
@@ -220,22 +238,26 @@ html {
   border-radius: 8rem;
   left: -0.7rem;
 }
+
 .lance__1 {
   left: 32.5rem;
   top: -3.5rem;
   transform: rotate(54deg);
 }
+
 .lance__2 {
   left: 31rem;
   top: -2rem;
   transform: rotate(46deg);
 }
+
 .lance__3 {
   left: 33rem;
   top: -3.5rem;
   transform: rotate(64deg);
   height: 52rem;
 }
+
 .cannons {
   width: 36rem;
   height: 32rem;
@@ -247,6 +269,7 @@ html {
   text-align: center;
   position: relative;
 }
+
 .cannons__right{
   transform: translate(12rem, -4rem) rotate(45deg);
   position: absolute;
@@ -323,6 +346,7 @@ html {
   top: 3.6rem;
   border: 0.1rem solid #f5d401;
 }
+
 .oval span {
   color: yellow;
   font-family: Georgia;
@@ -331,47 +355,55 @@ html {
   text-shadow: 0 0.2rem 0.2rem #000;
   font-weight: 700;
 }
+
 .oval span:nth-of-type(1) {
   position: absolute;
   top: 10rem;
   left: 1.2rem;
   transform: rotate(-80deg);
 }
+
 .oval span:nth-of-type(2) {
   position: absolute;
   top: 5.8rem;
   left: 2rem;
   transform: rotate(-70deg);
 }
+
 .oval span:nth-of-type(3) {
   position: absolute;
   top: 2.3rem;
   left: 4.8rem;
   transform: rotate(-40deg);
 }
+
 .oval span:nth-of-type(4) {
   position: absolute;
   top: 0.5rem;
   left: 9.5rem;
 }
+
 .oval span:nth-of-type(5) {
   position: absolute;
   top: 2rem;
   left: 13rem;
   transform: rotate(40deg);
 }
+
 .oval span:nth-of-type(6) {
   position: absolute;
   top: 5.8rem;
   left: 16.2rem;
   transform: rotate(70deg);
 }
+
 .oval span:nth-of-type(7) {
   position: absolute;
   top: 10rem;
   left: 17rem;
   transform: rotate(80deg);
 }
+
 .star{
   position: absolute;
   display: block;
@@ -383,6 +415,7 @@ html {
   transform: rotate(35deg) scale(0.1);
   z-index: 4;
 }
+
 .star:before {
   border-bottom: 8rem solid yellow;
   border-left: 3rem solid transparent;
@@ -396,6 +429,7 @@ html {
   content: '';
   transform: rotate(-35deg);
 }
+
 .star:after {
   position: absolute;
   display: block;
@@ -405,47 +439,57 @@ html {
   height: 0;
   border-right: 10rem solid transparent;
   border-bottom: 7rem solid yellow;
-  border-left: 100px solid transparent;
+  border-left: 10rem solid transparent;
   transform: rotate(-70deg);
   content: '';
 }
+
 .star__1{
-  top: 150px;
-  left: -82px;
+  top: 15rem;
+  left: -8.2rem;
 }
+
 .star__10{
-  top: 150px;
-  left: 82px;
+  top: 15rem;
+  left: 8.2rem;
 }
+
 .star__2{
-  top: 180px;
-  left: -75px;
+  top: 18rem;
+  left: -7.5rem;
 }
+
 .star__9{
-  top: 180px;
-  left: 75px;
+  top: 18rem;
+  left: 7.5rem;
 }
+
 .star__3{
-  top: 210px;
-  left: -60px;
+  top: 21rem;
+  left: -6rem;
 }
+
 .star__8{
-  top: 210px;
-  left: 60px;
+  top: 21rem;
+  left: 6rem;
 }
+
 .star__4{
-  top: 235px;
-  left: -40px;
+  top: 23.5rem;
+  left: -4rem;
 }
+
 .star__7{
-  top: 235px;
-  left: 40px;
+  top: 23.5rem;
+  left: 4rem;
 }
+
 .star__5{
-  top: 250px;
-  left: -15px;
+  top: 25rem;
+  left: -1.5rem;
 }
+
 .star__6{
-  top: 250px;
-  left: 15px;
+  top: 25rem;
+  left: 1.5rem;
 }
