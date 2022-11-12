@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axe</title>
+    <style>
+        /* TO DO: improve draw and code */
+        :root {
+            --handle-color: gray;
+            --metal-color: lightgray;
+        }
+
+        .accessories__axe {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 150px;
+            transform: rotate(25deg);
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+        }
+
+        .centro-head {
+            width: 60px;
+            height: 80px;
+            border: 1px solid rgba(0, 0, 0, .3);
+            background-color: var(--metal-color);
+        }
+
+        .handle {
+            width: 50px;
+            height: 200px;
+            margin: -34px;
+            border: 1px solid;
+            border-top: none;
+            background-color: var(--handle-color);
+        }
+
+        .edge-izq,
+        .edge-der {
+            width: 100px;
+            height: 150px;
+            background: radial-gradient(circle at top left, transparent 50px, var(--metal-color) 0) top left,
+                radial-gradient(circle at top right, transparent 0px, var(--metal-color) 0) top right,
+                radial-gradient(circle at bottom left, transparent 50px, var(--metal-color) 0) bottom left,
+                radial-gradient(circle at bottom right, transparent 0px, var(--metal-color) 0) bottom right;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .edge-izq {
+            transform: scale(-1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accessories__axe">
+        <div class="head">
+            <div class="edge-izq"></div>
+            <div class="centro-head"></div>
+            <div class='edge-der'></div>
+        </div>
+        <div class="handle"></div>
+    </div>
+    <a href="https://codepen.io/nzbin/pen/wJyRWr">Help page</a>
+</body>
+
+</html>
